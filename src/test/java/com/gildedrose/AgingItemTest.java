@@ -29,10 +29,10 @@ public class AgingItemTest {
         assert(app.items[0].quality == 21);
         app.calculateNextDay();
         assert(app.items[0].sellIn == -1);
-        assert(app.items[0].quality == 23);
+        assert(app.items[0].quality == 22);
         app.calculateNextDay();
         assert(app.items[0].sellIn == -2);
-        assert(app.items[0].quality == 25);
+        assert(app.items[0].quality == 23);
     }
 
     @Test

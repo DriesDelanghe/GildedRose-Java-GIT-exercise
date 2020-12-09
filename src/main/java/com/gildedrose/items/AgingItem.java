@@ -12,7 +12,7 @@ public class AgingItem extends Item {
     public void updateQuality() {
         int factor;
         if (this.sellIn >= 0) factor = 1;
-        else factor = 2;
+        else factor = 1;
         this.quality = Math.min(this.quality + factor, 50);
     }
 }
