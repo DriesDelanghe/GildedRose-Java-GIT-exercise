@@ -12,7 +12,7 @@ public class NormalItem extends Item {
     public void updateQuality() {
         int factor;
         if (this.sellIn >= 0) factor = 1;
-        else factor = 2;
+        else factor = 5;
         this.quality = Math.max(this.quality - factor, 0);
     }
 }
