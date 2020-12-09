@@ -28,10 +28,10 @@ class NormalItemTest {
         assert(app.items[0].quality == 19);
         app.calculateNextDay();
         assert(app.items[0].sellIn == -1);
-        assert(app.items[0].quality == 17);
+        assert(app.items[0].quality == 14);
         app.calculateNextDay();
         assert(app.items[0].sellIn == -2);
-        assert(app.items[0].quality == 15);
+        assert(app.items[0].quality == 9);
     }
 
     @Test
