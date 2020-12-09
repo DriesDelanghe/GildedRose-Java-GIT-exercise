@@ -12,7 +12,7 @@ public class ConjuredItem extends Item {
     public void updateQuality() {
         int factor;
         if (this.sellIn >= 0) factor = 2;
-        else factor = 4;
+        else factor = 10;
         this.quality = Math.max(this.quality - factor, 0);
     }
 }
