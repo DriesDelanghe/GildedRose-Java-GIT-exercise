@@ -11,7 +11,9 @@ public class ConjuredItem extends Item {
     @Override
     public void updateQuality() {
         int factor;
-        if (this.sellIn >= 0) factor = 2;
+        if (this.sellIn > 5) factor = -1;
+        else if (this.sellIn  <5 && this.sellIn >= 0) factor = -2;
+        else if (this.sellIn < 0) factor = -4;
         else factor = 4;
         this.quality = Math.max(this.quality - factor, 0);
     }
