@@ -16,3 +16,4 @@ public class ConjuredItem extends Item {
         this.quality = Math.max(this.quality - factor, 0);
     }
 }
+//selling > 5 factor -1 tussen 0 en 5 -2 onder 0 -4
